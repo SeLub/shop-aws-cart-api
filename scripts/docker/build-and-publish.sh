@@ -4,9 +4,9 @@ REGION=eu-central-1
 AWS_ACCOUNT_ID=914773708367
 PROFILE=default
 #PROFILE=personalAccount
-DOCKER_APP_NAME=total-new-app
+DOCKER_APP_NAME=selub-cart-api
 
-DOCKER_APP_REPOSITORY=total-new-app
+DOCKER_APP_REPOSITORY=selub-cart-api
 AWS_DOCKER_REGISTRY_URL=$AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
 DOCKER_TIME_TAG="$(date +%s)"
 DOCKER_LATEST_TAG=latest
