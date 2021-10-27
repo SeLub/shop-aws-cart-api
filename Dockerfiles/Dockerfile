@@ -56,7 +56,7 @@ RUN find ./ -name '.gitignore' \
 ########################################
 FROM alpine:3.9
 ENV NODE_ENV=production
-ENV NODE_VERSION 14.18.1
+ENV NODE_VERSION 12.20.0
 RUN addgroup -g 1000 node \
     && adduser -u 1000 -G node -s /bin/sh -D node \
     && rm -f /etc/*- \
@@ -68,7 +68,7 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 ## Production
 ########################################
 
-WORKDIR /ap
+WORKDIR /app
 COPY --from=1 /app/build ./
 USER node
 ENV PORT=8080
