@@ -2,7 +2,7 @@
 ########################################
 ## Development
 ########################################
-FROM node:14.18.1-buster
+FROM node:12.20-buster
 ENV NODE_ENV=development
 WORKDIR /app
 COPY package.json package-lock.json ./
@@ -12,7 +12,7 @@ RUN npm run build
 ########################################
 ## Build
 ########################################
-FROM node:14.18.1-alpine3.14
+FROM node:12.20.0-alpine3.9
 RUN apk add --no-cache binutils && \
   strip /usr/local/bin/node
 ENV NODE_ENV=production
@@ -54,7 +54,7 @@ RUN find ./ -name '.gitignore' \
 ########################################
 ## Tiny NodeJS
 ########################################
-FROM alpine:3.14
+FROM alpine:3.9
 ENV NODE_ENV=production
 ENV NODE_VERSION 14.18.1
 RUN addgroup -g 1000 node \
