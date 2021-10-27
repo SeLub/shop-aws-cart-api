@@ -2,7 +2,7 @@
 ########################################
 ## Development
 ########################################
-FROM node:14.18.1-slim
+FROM node:14.18.1-buster
 ENV NODE_ENV=development
 WORKDIR /app
 COPY package.json package-lock.json ./
