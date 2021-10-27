@@ -68,7 +68,7 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 ## Production
 ########################################
 
-WORKDIR /app
+WORKDIR /ap
 COPY --from=1 /app/build ./
 USER node
 ENV PORT=8080
