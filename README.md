@@ -1,5 +1,24 @@
 # Deploy app using Elastic Container Registry
 
+## Создание приложения
+
+eb init -r eu-central-1
+
+Enter Application Name: shop-aws-cart-api
+It appears you are using Docker. Is this correct? Y
+
+Select a platform branch.
+1) Docker running on 64bit Amazon Linux 2
+2) Multi-container Docker running on 64bit Amazon Linux (Deprecated)
+3) Docker running on 64bit Amazon Linux (Deprecated)
+
+1)
+
+Do you wish to continue with CodeCommit? (Y/n) n
+Do you want to set up SSH for your instances? (Y/n) n
+
+
+
 ##  Действия: деплой приложения 
 
 1. Создайте Dockerfile в корневой папке Dockerfiles
