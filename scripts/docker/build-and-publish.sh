@@ -6,7 +6,7 @@ PROFILE=default
 #PROFILE=personalAccount
 DOCKER_APP_NAME=selub-cart-api
 
-DOCKER_APP_REPOSITORY=selub-cart-api-2
+DOCKER_APP_REPOSITORY=selub-cart-api
 AWS_DOCKER_REGISTRY_URL=$AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
 DOCKER_TIME_TAG="$(date +%s)"
 DOCKER_LATEST_TAG=latest
