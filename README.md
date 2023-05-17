@@ -1,8 +1,7 @@
 # Repository of Cart API service 
 
-Backend: https://github.com/SeLub/shop-aws-be  
-Frontend: https://github.com/SeLub/shop-aws-fe   
-Task: https://github.com/rolling-scopes-school/nodejs-aws-tasks/blob/main/task8-docker-elastic-beanstalk/task.md  
+Backend: https://github.com/SeLub/epam-aws-be  
+Frontend: https://github.com/SeLub/epam-aws-fe   
 
 Barnch: NON-optimezed Dockerfile https://github.com/SeLub/shop-aws-cart-api/tree/feat/nonopimized-deploy-from-registry  
 Barnch: optimezed Dockerfile https://github.com/SeLub/shop-aws-cart-api/tree/feat/deploy-from-registry  
